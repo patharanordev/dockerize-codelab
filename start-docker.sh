@@ -1,9 +1,8 @@
-HOST=$1
-PORT=$2
+SERVICE_PORT=$1
+DOCKER_REGISTRY=$2
 VERSION=$3
-REGISTRY_PORT=$4
 docker run -d \
--p $PORT:8000 \
---expose=$PORT \
+-p $SERVICE_PORT:8000 \
+--expose=$SERVICE_PORT \
 --name="codelab" \
-$HOST:$REGISTRY_PORT/codelab:$VERSION
+$DOCKER_REGISTRY/dockerize-codelab:$VERSION
