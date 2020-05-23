@@ -1,0 +1,6 @@
+REGISTRY_HOST_IP=$1
+REGISTRY_PORT=$2
+VERSION=$3
+# INST_USERNAME=
+# scp -o StrictHostKeyChecking=no -rp ./* $INST_USERNAME@$REGISTRY_HOST_IP:/app/codelab/ 
+docker push $REGISTRY_HOST_IP:$REGISTRY_PORT/codelab:$VERSION

@@ -1,0 +1,1 @@
+docker stop codelab && docker rm codelab
