@@ -57,6 +57,14 @@ $ sh export.sh
 $ docker restart codelab
 ```
 
+you should see `My Labs`
+
+![cover-page](./assets/ss-my-lab-cover-page.png)
+
+this is my lab content
+
+![content](./assets/ss-my-lab-content.png)
+
 enjoy via
 ```bash
 http://localhost:8001
